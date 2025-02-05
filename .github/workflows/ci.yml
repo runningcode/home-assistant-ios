@@ -107,9 +107,6 @@ jobs:
           path: ~/Library/Developer/Xcode/DerivedData/HomeAssistant-*/Build/Products/Debug-iphonesimulator/*.app
 
   size:
-    if: |
-      github.event_name == 'pull_request' &&
-      github.event.pull_request.head.repo.full_name == 'home-assistant/iOS'
     runs-on: macos-15
     timeout-minutes: 60
     steps:
